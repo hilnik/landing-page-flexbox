@@ -1,0 +1,12 @@
+header {
+    display: flex;
+    background-color: darkblue ;
+    justify-content: flex-start;
+}
+.header-links {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-left: auto;
+
+}
