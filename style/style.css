@@ -1,4 +1,8 @@
 /* this is where css goes for the entire webpage / multiple parts */
+*{
+    outline: 1px dashed red;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -8,6 +12,7 @@ body{
 }
 .header, .section-1, .footer{
     background-color: #1F2937;
+    color: #F9FAF8;
 }
 
 body > div{
@@ -32,16 +37,95 @@ body > div{
     gap: 10px;
     font-size: 18px;
     font-weight: 100;
-    color: #F9FAF8;
 }
 .header-links > div{
    outline: 1px solid white; 
    padding: 2px;
 }
 
+/* This is for the section 1 */
+.section-1{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+.s1-left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.section-1 > div {
+    flex-grow: 1;
+    flex-wrap: wrap;
+    max-width: 50%;
+}
+
+.hero{
+    font-size: 48px;
+    font-weight: 1000;
+}
+
+.sub-hero{
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.s1-right{
+    background-color: rgba(211, 211, 211, 0.5);;
+    
+}
+
+/* This is for the section 2 */
+.section-2{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0px;
+}
+.s2-title{
+    display: flex;
+    justify-content: center;
+}
+.s2-boxes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.box-and-text-container{
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    outline: 2px solid blue;
+    border-radius: 5px;
+}
+
+/* This is for the section 3 */
 
 
 
+/* This is for the section 4 */
 .section-4{
     background-color: #e5e7eb;
+  
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 50;
+    padding: 20px 0px;
 }
