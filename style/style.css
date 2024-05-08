@@ -1,6 +1,6 @@
 /* this is where css goes for the entire webpage / multiple parts */
 *{
-    outline: 1px dashed red;
+    /* outline: 1px dashed red; */
 }
 
 body{
@@ -16,7 +16,18 @@ body{
 }
 
 body > div{
-    padding: 0 100px;
+    padding: 50px 100px; 
+}
+
+button{
+    border-color:  #e5e7eb;
+    border-radius: 15px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    background-color: #3882F6;
+    color: #e5e7eb;
+
 }
 
 /* This is for the heading bar */
@@ -24,6 +35,8 @@ body > div{
 .header, .header-links{
     display: flex;
     flex-direction: row;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 .header-logo{
     font-size: 24px;
@@ -47,9 +60,7 @@ body > div{
 .section-1{
     display: flex;
     justify-content: space-between;
-    padding-top: 100px;
-    padding-bottom: 100px;
-
+    gap: 30px;
 }
 .s1-left{
     display: flex;
@@ -74,7 +85,11 @@ body > div{
 }
 
 .s1-right{
-    background-color: rgba(211, 211, 211, 0.5);;
+    display: flex;
+    background-color: rgba(211, 211, 211, 0.5);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
     
 }
 
@@ -82,7 +97,6 @@ body > div{
 .section-2{
     display: flex;
     flex-direction: column;
-    margin: 50px 0px;
 }
 .s2-title{
     display: flex;
@@ -99,27 +113,86 @@ body > div{
     display: flex;
     flex-shrink: 0;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     gap: 10px;
+    max-width: 100px;
 }
 
 .box{
     height: 100px;
     width: 100px;
-    outline: 2px solid blue;
-    border-radius: 5px;
+    outline: 2px solid #3882F6;
+    border-radius: 10px;
+}
+.text{
+    text-align: center;
 }
 
 /* This is for the section 3 */
+.section-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #e5e7eb;
+}
 
+.s3-container{
+    display: flex;
+    flex-direction: column;
+}
 
+.s3-quote{
+    max-width: 800px;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.s3-author{
+    max-width: fit-content;
+    margin-left: auto;
+    font-weight: 900;
+    font-size: 20px;
+
+}
 
 /* This is for the section 4 */
 .section-4{
-    background-color: #e5e7eb;
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 100px;
 }
+
+.s4-box{
+    display: flex;
+    padding: 40px 20px;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #3882F6;
+    border-radius: 10px;
+}
+
+.s4-inside-top-left{
+    color: white;
+    font-size: 24px;
+    font-weight: 900;
+}
+.s4-inside-bottom-left{
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.s4-inside-right{
+    display: flex;
+    align-items: center;
+}
+/* This is for the footer */
 
 .footer{
     display: flex;
